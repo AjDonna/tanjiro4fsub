@@ -122,19 +122,19 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ 𝟷 🦊", url=client.invitelink),
-            InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ 𝟸 🐭", url=client.invitelink2),
+            InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ 𝟷 ", url=client.invitelink),
+            InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ 𝟸 ", url=client.invitelink2),
         ],
         [
-            InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ 𝟹 🐰", url=client.invitelink3),
-            InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ 𝟺 🐼", url=client.invitelink4),
+            InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ 𝟹 ", url=client.invitelink3),
+            InlineKeyboardButton(text="Cʜᴀɴɴᴇʟ 𝟺 ", url=client.invitelink4),
         ]
     ]
     try:
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = 'Rᴇʟᴏᴀᴅ 💁‍♂️',
+                    text = 'Rᴇʟᴏᴀᴅ',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
